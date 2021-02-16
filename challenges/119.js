@@ -24,6 +24,24 @@ const otherRoads = [
 /*
   Process the "otherRoads" array of strings so you can call addRoad for each pair of locations.
 */
+//splitting the strings with arrow 
+// otherRoads[0].split('<=>');
+// 0,0, 0[1]; index 0 and index 1 of each subarrara/elemnt are sn and en 
+//e startname endingname 
+
+console.log(otherRoads[0].split(' <=> ' ));
+console.log(otherRoads[0].split('<=>'));
+
+// //result of the variable 
+for (let i=0; i < otherRoads.length; i++){
+   let pair = otherRoads[i].split(" <=> ");
+   let a = pair[0];
+  let b= pair[1];
+    addRoad(a,b);
+}
 
 
-module.exports = addRoad;
+// //stays in one array element separated by the 
+
+// console.log(otherRoads[0].split('<=>'));
+// // module.exports = addRoad;
